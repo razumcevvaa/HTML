@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="st.css">
+    <title>credit card</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+
+            <div class="title">
+                <h1>CREDIT CARD DETAILS</h1>
+            </div>
+            <form class="flex">
+                <label for="card">Card number</label>
+                <input name="card" type="number" id="card" required placeholder="1234 5678 9073 3822" minlength="16"
+                    maxlength="16">
+
+                <label for="username">Name on card</label>
+                <input type="text" name="username" id="username" placeholder="Name Surname" required
+                    autocapitalize="text">
+            </form>
+            <div class="back">
+
+                <form class="date">
+                    <label for="number">Expiry date</label>
+                    <div class="l">
+                        <input class="numb" type="number" id="number" maxlength="2" placeholder="02" required>
+
+                        <input class="numb" type="number" id="number" placeholder="2012" required>
+                    </div>
+                </form>
+
+                <div class="cvv">
+                    <label for="cvv">Cvv/Cvn</label>
+
+                    <input class="cvv-t" type="text" id="cvv" placeholder="***" minlength="3" maxlength="3" required>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+/* .color {
+    background-color: rgb(240, 200, 126);
+} */
+/* tbody tr:nth-child(odd) {
+    background-color: lightpink;
+} */
+caption {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.margin {
+    margin-top: 50px;
+}

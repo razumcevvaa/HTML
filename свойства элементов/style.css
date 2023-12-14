@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+.block {
+    /* box-shadow: 20px 15px 50px red;
+    padding: 10px;
+    margin: 30px;
+    opacity: 0.5; background-color: pink; */
+    /* max-width: 300px; */
+    /* min-width: 500px;
+    height: 200px; */
+    /* padding: 20px;
+    box-sizing: content-box;
+    width: 500px; */
+    /* max-height: 100px;
+    overflow:scr auto;
+    margin-bottom: 50px; */
+    border: 1px solid rebeccapurple;
+}
+
+
+.string {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+.images {
+width: 300px;
+}

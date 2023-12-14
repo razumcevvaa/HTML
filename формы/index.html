@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="st.css">
+    <title>ФОРМЫ</title>
+</head>
+
+<body>
+    <section>
+
+        <!-- <form>
+            <fieldset>
+                <legend>Заголовок</legend>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt totam nihil nobis harum
+                necessitatibus.
+                Culpa, explicabo! Nemo neque asperiores a voluptate labore, nulla tenetur sapiente excepturi quis, eius
+                accusamus corporis? (Контент первого блока)
+            </fieldset>
+
+            <fieldset>
+                <legend>Заголовок 2</legend>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt totam nihil nobis harum
+                necessitatibus.
+                Culpa, explicabo! Nemo neque asperiores a voluptate labore, nulla tenetur sapiente excepturi quis, eius
+                accusamus corporis? (Контент второго блока)
+            </fieldset>
+        </form> -->
+
+        <form>
+            <label for="card_number">Введите номер карты</label>
+            <input id="card_number" name="card" type="text" />
+        </form>
+
+        <form>
+            <label for="email">Введите вашу почту</label>
+            <input id="email" name="email" type="email" autocomplete="email" />
+            <input type="submit">
+        </form>
+
+        <form>
+            <input type="search" placeholder="Поиск" />
+        </form>
+
+        <form>
+            <label for="phone">Введите номер телефона</label>
+            <input name="phone" type="tel" autocapitalize="tel">
+        </form>
+
+        <form>
+            <label class="input_password" for="psw">Введите пароль</label>
+            <input name="psw" type="password" minlength="4" maxlength="8" placeholder="Введите пароль">
+        </form>
+
+        <div class="date">
+            <form>
+                <label for="date">Введите дату без времени</label>
+                <input type="date" id="date">
+            </form>
+
+            <form>
+                <label for="date-local">Введите дату со временем </label>
+                <input type="datetime-local" id="date-local" value="2023-10-26T19:39">
+            </form>
+
+            <form>
+                <label for="date-month">Введите месяц и год</label>
+                <input type="month" id="date-month" value="2023-10">
+            </form>
+
+            <form>
+                <label for="date-time">Введите время</label>
+                <input type="time" id="date-time" value="19:42">
+            </form>
+        </div>
+
+        <form>
+            <label for="text">Введите сообщение</label>
+            <input type="text" id="text" required>
+        </form>
+
+
+
+        <div class="account">
+
+            <h1>PERSONAL DETAILS</h1>
+            <form>
+                <label for="email"></label>
+                <input id="email" type="email" name="email" autocomplete="email" placeholder="email" required>
+
+                <label for="psw"></label>
+                <input id="psw" type="password" autocapitalize="password" name="password" placeholder="password"
+                    required>
+
+                <label for="username"></label>
+                <input id="username" type="text" name="username" autocapitalize="text" placeholder="name">
+
+                <input class="button" type="submit" value="create account ">
+            </form>
+
+        </div>
+
+
+
+        <!-- <form>
+            <input id="checkbox" type="checkbox" checked>
+            <label for="checkbox">Запомнить пароль</label>
+        </form>
+
+        <form>
+            <input type="radio" id="male" name="male" value="male" checked>
+            <label for="male">муж</label>
+
+            <input type="radio" id="female" name="male" value="female">
+            <label for="female">жен</label>
+        </form>
+
+
+        <form>
+            <label for="volume">Громкость звука от 1 до 100</label>
+            <input id="volume" name="volume" type="range" min="1" max="100">
+        </form> -->
+
+
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+li {
+    color: black;
+}
+span.name {
+  color: darkgray;
+}
+span.synonyms {
+    color: blue;
+}
+dl {
+    padding: 20px;
+}
+dt {
+    padding-bottom: 10px;
+}
+.item {
+    padding: 5px;
+    margin: 5px;
+}

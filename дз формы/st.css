@@ -1,0 +1,63 @@
+.container {
+    margin: 20px;
+    width: 30%;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1 {
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 15x;
+}
+
+.preface {
+    font-size: 12px;
+    color: black;
+    
+}
+
+input {
+    border: 1px solid gray;
+    border-radius: 30px;
+    padding: 15px 20px;
+    font-size: 15px;
+}
+
+input::placeholder {
+    color: gray;
+    font-size: 15px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.button {
+    margin-top: 10px;
+    padding: 15px 20px;
+    text-align: center;
+    color: white;
+    background-color: #187b87;
+    font-size: 15px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.login {
+    color: gray;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.link {
+    font-size: 12px;
+    color: black;
+}
