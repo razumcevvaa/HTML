@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>footer</title>
+</head>
+<style>
+  footer {
+    background-color: rgb(96, 96, 243);
+    margin: 20px;
+    padding: 40px;
+    color: aliceblue;
+  }
+
+  .icons {
+    display: flex;
+    align-items: center;
+  }
+
+  .all {
+    display: flex;
+    justify-content: space-around;
+    gap: 150px;
+    align-items: center;
+  }
+
+  p:hover {
+    text-decoration: underline;
+  }
+
+
+  img:hover {
+    filter: grayscale(0);
+  }
+
+  img {
+    filter: grayscale(1);
+    width: 40px;
+    padding: 15px;
+  }
+
+  span {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+</style>
+
+<body>
+  <footer>
+    <div class="all">
+      <div class="one">
+        <p>Home</p>
+        <p>About</p>
+        <p>Gallery</p>
+        <p>News</p>
+      </div>
+
+      <div class="two">
+        <p>Blog</p>
+        <p>FAQ</p>
+        <p>Contacts</p>
+        <p>Privary & cookies</p>
+      </div>
+      <div class="icons">
+        <div>
+          <img src="./food/youtube.png" alt="youtube">
+        </div>
+        <div>
+          <img src="./food/insta.png" alt="inst">
+        </div>
+        <div>
+          <img src="./food/fb.png" alt="fb">
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <span>Copyright &#169; Company 2018 - 2019</span>
+  </footer>
+</body>
+
+</html>
