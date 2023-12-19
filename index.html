@@ -9,20 +9,176 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <title>main</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @font-face {
+            font-family: 'Deutsch Gothic';
+            src: local('Deutsch Gothic'), local('DeutschGothic'), url('deutschgothic.woff2') format('woff2'), url('deutschgothic.woff') format('woff'), url('deutschgothic.ttf') format('truetype');
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        body {
+            background-color: rgb(27, 27, 27);
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .all_pz {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .all_dz {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: #ffffff;
+            text-align: center;
+            font-family: 'Deutsch Gothic';
+        }
+
+        .dz {
+            text-decoration: none;
+            outline: none;
+            color: white;
+            position: relative;
+            padding: 15px 30px;
+            border: 1px solid;
+            border-image: linear-gradient(180deg, #ffcbd3, #ffd8de, #e0d9e9, #92c2fe);
+            border-image-slice: 1;
+            margin: 10px 20px;
+            text-transform: uppercase;
+            overflow: hidden;
+            letter-spacing: 2px;
+            transition: .8s cubic-bezier(.165, .84, .44, 1);
+        }
+
+        .dz:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 0;
+            width: 100%;
+            z-index: -1;
+            background: linear-gradient(180deg, #ffcbd3, #ffd8de, #e0d9e9, #92c2fe);
+            transition: .8s cubic-bezier(.165, .84, .44, 1);
+        }
+
+        .dz:hover {
+            background: rgba(255, 255, 255, 0);
+            color: black;
+        }
+
+        .dz:hover:before {
+            bottom: 0%;
+            top: auto;
+            height: 100%;
+        }
+
+        span {
+            font-family: 'Deutsch Gothic';
+            font-style: normal;
+            text-transform: lowercase;
+        }
+
+        .pz {
+            text-decoration: none;
+            outline: none;
+            color: white;
+            position: relative;
+            padding: 15px 30px;
+            border: 1px solid;
+            border-image: linear-gradient(180deg, #92c2fe, #e0d9e9, #ffd8de, #ffcbd3);
+            border-image-slice: 1;
+            margin: 10px 20px;
+            text-transform: uppercase;
+            overflow: hidden;
+            letter-spacing: 2px;
+            transition: .8s cubic-bezier(.165, .84, .44, 1);
+        }
+
+        .pz:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 0;
+            width: 100%;
+            z-index: -1;
+            background: linear-gradient(180deg, #92c2fe, #e0d9e9, #ffd8de, #ffcbd3);
+            transition: .8s cubic-bezier(.165, .84, .44, 1);
+        }
+
+        .pz:hover {
+            background: rgba(255, 255, 255, 0);
+            color: black;
+        }
+
+        .pz:hover:before {
+            bottom: 0%;
+            bottom: ;: auto;
+            height: 100%;
+        }
+        .foto {
+           max-width:50%;
+        }
+    </style>
 </head>
 
 <body>
-    main page
-    <a href="dz1.1.html">HW1.1</a>
-    <a href="dz1.2.html">HW1.2</a>
-    <a href="dz1.3.html">HW1.2</a>
-    <a href="dz2.1.html">HW2.1</a>
-    <a href="dz2.2.html">HW2.2</a>
-    <a href="dz2.3.html">HW2.3</a>
-    <a href="dz3.1.html">HW3.1</a>
-    <a href="dz3.2.html">HW3.2</a>
-    <a href="dz3.3.html">HW3.3</a>
-    <a href="dz3.4.html">HW3.4</a>
+    <h1>Homework</h1>
+    <div class="container">
+        <div class="all_dz">
+            <a href="dz1.1.html" class="dz"> <span>
+                    hw1.1
+                </span></a>
+            <a href="dz1.2.html" class="dz"> <span>
+                    HW1.2
+                </span></a>
+            <a href="dz1.3.html" class="dz"> <span>
+                    HW1.3
+                </span></a>
+            <a href="dz2.1.html" class="dz"> <span>
+                    HW2.1
+                </span></a>
+            <a href="dz2.2.html" class="dz"> <span>
+                    HW2.2
+                </span></a>
+            <a href="dz2.3.html" class="dz"> <span>
+                    HW2.3
+                </span></a>
+            <a href="dz3.1.html" class="dz"> <span>
+                    HW3.1
+                </span></a>
+            <a href="dz3.2.html" class="dz"> <span>
+                    HW3.2
+                </span></a>
+            <a href="dz3.3.html" class="dz"> <span>
+                    HW3.3
+                </span></a>
+            <a href="dz3.4.html" class="dz"> <span>
+                    HW3.4
+                </span></a>
+        </div>
+        <div class="foto">
+            <img src="./icons/photo.jpg" alt="foto">
+        </div>
+        <div class="all_pz">
+            <a href="pz1.1.html" class="pz"><span>pz1.1</span></a>
+            <a href="pz1.2.html" class="pz"><span>pz1.2</span></a>
+            <a href="pz1.3.html" class="pz"><span>pz1.3</span></a>
+            <a href="pz2.1.html" class="pz"><span>pz2.1</span></a>
+            <a href="pz2.2.html" class="pz"><span>pz2.2</span></a>
+            <a href="pz2.3.html" class="pz"><span>pz2.3</span></a>
+        </div>
+    </div>
 </body>
 
 </html>
