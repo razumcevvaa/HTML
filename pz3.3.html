@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cats galery</title>
+  <style>
+    iframe {
+      border: none;
+      display: block;
+      width: 256px;
+      height: 256px;
+      margin: 10px auto;
+    }
+
+    img {
+      width: 64px;
+    }
+
+    .container {
+      border: 2px solid gray;
+      width: 512px;
+      margin: 50px auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    hr {
+      border-color: gray;
+    }
+
+    .cat {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    a {
+      border: 1px solid grey;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Cats galery</h2>
+    <hr>
+    <iframe src="./food/cat_tied_256.png" name="bigCat"></iframe>
+    <div class="cat">
+      <a href="./food/cat_tied_256.png" target="bigCat"> <img src="./food/cat_tied_64.png" alt=""></a>
+      <a href="./food/cat_purr_256.png" target="bigCat"> <img src="./food/cat_purr_64.png" alt=""></a>
+      <a href="./food/cat_eyes_256.png" target="bigCat"> <img src="./food/cat_eyes_64.png" alt=""></a>
+      <a href="./food/cat_clean_256.png" target="bigCat"> <img src="./food/cat_clean_64.png" alt=""></a>
+      <a href="./food/cat_cage_256.png" target="bigCat"> <img src="./food/cat_cage_64.png" alt=""></a>
+      <a href="./food/cat_box_256.png" target="bigCat"> <img src="./food/cat_box_64.png" alt=""></a>
+    </div>
+</body>
+
+</html>
