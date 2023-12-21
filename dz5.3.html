@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Price</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      margin-top: 70px;
+      gap: 20px;
+    }
+
+    .box {
+      border: 1px solid grey;
+      border-radius: 10px;
+      width: 190px;
+      height: 400px;
+      padding: 20px;
+      box-shadow: -10px -10px 15px rgba(51, 48, 48, 0.5),
+        10px 10px 15px rgba(3, 3, 3, 0.12);
+       background-color: white;
+       transition: transform 1s ease-in-out;
+    }
+
+    h4,
+    h1 {
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .grey {
+      text-align: center;
+      font-size: 20px;
+      color: gray;
+      position: relative;
+      top: -15px;
+    }
+
+    p {
+      text-align: center;
+      line-height: 2;
+    }
+
+    button {
+      padding: 15px 30px;
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+      color: white;
+      border: none;
+    }
+
+    .one {
+      border-color: #c73756;
+      background-color: #c73756;
+    }
+
+    .two {
+      border-color: #d7913b;
+      background-color: #d7913b;
+    }
+
+    .three {
+      border-color: #2b6689;
+      background-color: #2b6689;
+    }
+
+    .four {
+      border-color: #63bb34;
+      background-color: #63bb34;
+    }
+
+    .box:hover {
+      transform: scale(1.20);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <h4>Enterprice</h4>
+      <hr class="one">
+      <h1>$69</h1>
+      <p class="grey">per month</p>
+      <p> <b>
+          10GB disk space <br>
+          100GB monthly bandwight <br>
+          20 email accounts <br>
+          Unimited supdomens
+        </b>
+      </p>
+      <button class="one">BUY</button>
+    </div>
+    <div class="box">
+      <h4>Professiaonal</h4>
+      <hr class="two">
+      <h1>$29</h1>
+      <p class="grey">per month</p>
+      <p>
+        <b>
+          5GB disk space <br>
+          60GB monthly bandwight <br>
+          10 email accounts <br>
+          Unimited supdomens
+        </b>
+      </p>
+      <button class="two">BUY</button>
+    </div>
+    <div class="box">
+      <h4>Standart</h4>
+      <hr class="three">
+      <h1>$19</h1>
+      <p class="grey">per month</p>
+      <p> <b>
+          3GB disk space <br>
+          30GB monthly bandwight <br>
+          5 email accounts <br>
+          Unimited supdomens
+        </b>
+      </p>
+      <button class="three">BUY</button>
+    </div>
+    <div class="box">
+      <h4>Basic</h4>
+      <hr class="four">
+      <h1>$9</h1>
+      <p class="grey">per month</p>
+      <p> <b>
+          1GB disk space <br>
+          10GB monthly bandwight <br>
+          2 email accounts <br>
+          Unimited supdomens
+        </b>
+      </p>
+      <button class="four">BUY</button>
+    </div>
+  </div>
+</body>
+
+</html>
