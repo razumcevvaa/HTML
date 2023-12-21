@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            perspective: 1000px;
+            margin-top: 50px;
+            background-color: ghostwhite;
+            padding: 30px;
+        }
+
+        .door {
+            width: 400px;
+            height: 300px;
+            transition: all 2s;
+        }
+
+        .left {
+            background-image: url(./icons/fon.jpg);
+            transform-origin: 0% 50%;
+        }
+
+        .right {
+            background-image: url(./icons/fon2.jpg);
+            transform-origin: 100% 50%;
+        }
+
+        .container:hover>.right {
+            transform: rotateY(-60deg);
+        }
+
+        .container:hover>.left {
+            transform: rotateY(60deg);
+        }
+
+        h2 {
+            position: absolute;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class=" door left"></div>
+        <div class=" door right"></div>
+        <h2>«Fall seven time <br> and stand up eight».</h2>
+
+    </div>
+</body>
+
+</html>

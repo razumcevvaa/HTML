@@ -6,9 +6,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>William Shakespeare</title>
   <style>
+    nav {
+      display: flex;
+      justify-content: space-evenly;
+      background-color: #a23645;
+      color: white;
+      position: fixed;
+      top: 0;
+      min-width: 1400px;
+      margin-left: 11%;
+      padding-right: 3.9%;
+
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      background-color: #f5f5f5;
+      padding: 37px;
+    }
+
     .main {
       display: flex;
       gap: 30px;
+    }
+
+    .footer {
+      display: flex;
+      width: 100%;
+
+    }
+
+    .text {
+      width: 50%;
+    }
+
+    fieldset {
+      border: none;
     }
   </style>
 </head>
@@ -21,12 +55,13 @@
     <p>The authors</p>
     <p>Readers</p>
   </nav>
-
   <div class="container">
+
     <div class="main">
       <div class="text">
         <h1>William Shakespeare</h1>
         <hr>
+        <p style="font-style: italic;">From Wikipedia yhe free encyclopedia</p>
         <p>William Shakespeare (bapt. 26 April 1564 – 23 April 1616) was an English poet, playwright and actor, widely
           regarded as the greatest writer in the English language and the world's greatest dramatist. He is often called
           England's national poet and the "Bard of Avon". His extant works, including collaborations, consist of
@@ -54,6 +89,7 @@
         <p>Throughout the 20th and 21st centuries, Shakespeare's works have been continually adapted and rediscovered by
           new movements in scholarship and performance. His plays remain popular and are studied, performed, and
           reinterpreted through various cultural and political contexts around the world.</p>
+        <p><b>Similar authors:</b></p>
       </div>
       <div class="foto">
         <img style="width: 320px;" src="./icons/wsh.jpg" alt="...">
@@ -69,7 +105,7 @@
             </tr>
             <tr>
               <th>Spouse</th>
-              <td> Anne Hathaway (m. 1582)              </td>
+              <td> Anne Hathaway (m. 1582) </td>
             </tr>
             <tr>
               <th>Children </th>
@@ -87,7 +123,35 @@
     </div>
 
     <div class="footer">
+      <figure>
+        <img style="width: 150px; height: 200px;" src="./icons/Anne_Hathaway.jpg" alt=".">
+        <fieldset>Anne Hathaway</fieldset>
+      </figure>
 
+      <figure>
+        <img style="width: 150px; height: 200px" src="./icons/Dickens_Gurney.jpg" alt=".">
+        <fieldset>Dickens Gurney</fieldset>
+      </figure>
+
+      <figure>
+        <img style="width: 150px; height: 200px" src="./icons/Oscar_Wilde_Sarony.jpg" alt=".">
+        <fieldset>Oscar Wilde</fieldset>
+      </figure>
+
+      <figure>
+        <img style="width: 150px; height: 200px" src="./icons/Cervantes_Jauregui.jpg" alt=".">
+        <fieldset>Cervantes Jauregui</fieldset>
+      </figure>
+
+      <figure>
+        <img style="width: 150px; height: 200px" src="./icons/Edgar_Allan_Poe.jpg" alt=".">
+        <fieldset>Edgar Allan Poe</fieldset>
+      </figure>
+
+      <figure>
+        <img style="width: 150px; height: 200px" src="./icons/WilliamWordsworth.jpg" alt=".">
+        <fieldset>William Wordsworth</fieldset>
+      </figure>
     </div>
   </div>
 </body>
