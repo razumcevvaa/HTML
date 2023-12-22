@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hi</title>
+  <style>
+    body {
+      background-color: palegoldenrod;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 500px;
+      position: relative;
+    }
+
+    h1 {
+      text-align: center;
+      color: rgb(0, 0, 0);
+      text-transform: uppercase;
+    }
+
+    .icon {
+      position: absolute;
+      bottom: -100px;
+      opacity: 0;
+      transition: bottom 2s ease, opacity 2s ease;
+    }
+
+    .icon:nth-child(1) {
+      transition-delay: 0.5s;
+      transform: rotate(-30deg) scale(1);
+
+    }
+
+    .icon:nth-child(2) {
+      transition-delay: 1s;
+      transform: rotate(-10deg) scale(1.5);
+
+    }
+
+    .icon:nth-child(3) {
+      transition-delay: 1.5s;
+      transform: rotate(15deg) scale(1.5);
+    }
+
+    .icon:nth-child(4) {
+      transition-delay: 2.0s;
+      transform: rotate(30deg) scale(1);
+    }
+
+    .icon:nth-child(5) {
+      transition-delay: 2.5s;
+      transform: rotate(90deg);
+    }
+
+    .icon img {
+      width: 100px;
+      height: 100px;
+    }
+
+    .show {
+      bottom: 0;
+      opacity: 1;
+    }
+
+    @keyframes showIcons {
+      from {
+        opacity: 0;
+        bottom: 200px;
+        left: 45%;
+      }
+
+    }
+
+    .icon:nth-child(1) {
+      animation: showIcons 2s ease 0.5s both;
+      opacity: 1;
+      bottom: 50%;
+      left: 30%;
+    }
+
+    .icon:nth-child(2) {
+      animation: showIcons 2s ease 1s both;
+      opacity: 1;
+      bottom: 56%;
+      left: 40%;
+    }
+
+    .icon:nth-child(3) {
+      animation: showIcons 2s ease 1.5s both;
+      opacity: 1;
+      bottom: 56%;
+      left: 50%;
+    }
+
+    .icon:nth-child(4) {
+      animation: showIcons 2s ease 2.0s both;
+      opacity: 1;
+      bottom: 50%;
+      left: 58%;
+    }
+
+    .icon:nth-child(5) {
+      animation: showIcons 2s ease 2.5s both;
+      opacity: 1;
+      bottom: 35%;
+      left: 45%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Hello, my site</h1>
+  <div class="container">
+
+    <div class="icon">
+      <img src="./icons/book.png" alt="book">
+    </div>
+    <div class="icon">
+      <img src="./icons/calc.png" alt="calt">
+    </div>
+    <div class="icon">
+      <img src="./icons/pallete.png" alt="pallete">
+    </div>
+    <div class="icon">
+      <img src="./icons/paper.png" alt="paper">
+    </div>
+    <div class="icon">
+      <img src="./icons/pencil.png" alt="pencil">
+    </div>
+
+  </div>
+</body>
+
+</html>

@@ -5,10 +5,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>meow</title>
+    <style>
+        .container {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            margin: 30px auto;
+        }
+
+        .one {
+            display: flex;
+            transition: 0.3s;
+        }
+
+        .one:hover {
+            opacity: 0.7;
+        }
+
+        .two {
+            display: flex;
+            transition: 0.3s;
+        }
+
+        .two:hover {
+            opacity: 0.7;
+        }
+
+        .three {
+            display: flex;
+            transition: 0.3s;
+        }
+
+        .three:hover {
+            opacity: 0.7;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+            transition: 1s ease-in-out;
+        }
+
+        .text {
+            width: 50%;
+            display: flex;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 600;
+            background-color: black;
+            color: #6f6472;
+        }
+
+        .foto {
+            width: 50%;
+            overflow: hidden;
+        }
+
+        img:hover {
+            transform: scale(1.5);
+        }
+    </style>
 </head>
 
 <body>
-    
+    <div class="container">
+        <div class="one">
+            <div class="text">
+                <p>
+                    A mask <br>
+                    won't hide <br>
+                    who you <br>
+                    are inside...
+                </p>
+            </div>
+            <div class="foto">
+                <img src="./food/meow.png" alt="...">
+            </div>
+        </div>
+        <div class="two">
+            <div class="foto">
+                <img src="./food/meow.png" alt="...">
+            </div>
+            <div class="text">
+                <p>
+                    A mask <br>
+                    won't hide <br>
+                    who you <br>
+                    are inside...
+                </p>
+            </div>
+        </div>
+        <div class="three">
+            <div class="text">
+                <p>
+                    A mask <br>
+                    won't hide <br>
+                    who you <br>
+                    are inside...
+                </p>
+            </div>
+            <div class="foto">
+                <img src="./food/meow.png" alt="...">
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
