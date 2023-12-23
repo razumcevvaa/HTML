@@ -6,24 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>William Shakespeare</title>
   <style>
-    nav {
-      display: flex;
-      justify-content: space-evenly;
-      background-color: #a23645;
-      color: white;
-      position: fixed;
-      top: 0;
-      min-width: 1400px;
-      margin-left: 11%;
-      padding-right: 3.9%;
-
-    }
-
     .container {
-      max-width: 1400px;
+      max-width: 1000px;
       margin: 0 auto;
       background-color: #f5f5f5;
-      padding: 37px;
+      padding-top: 50px;
     }
 
     .main {
@@ -33,29 +20,51 @@
 
     .footer {
       display: flex;
-      width: 100%;
-
+      justify-content: space-between;
     }
 
     .text {
-      width: 50%;
+      width: 60%;
     }
 
     fieldset {
       border: none;
+      margin: 0;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-evenly;
+      background-color: #a23645;
+      color: white;
+      position: fixed;
+      top: 0;
+      width: 1000px;
+    }
+
+    figure {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+    }
+    .foto {
+      background-color: rgb(233, 233, 233);
+      margin: 0 auto;
+      width: 40%;
     }
   </style>
 </head>
 
 <body>
-  <nav>
-    <p><b>WRITTERS</b></p>
-    <p>Discussing</p>
-    <p>Books</p>
-    <p>The authors</p>
-    <p>Readers</p>
-  </nav>
   <div class="container">
+    <div class="nav">
+      <p><b>WRITTERS</b></p>
+      <p>Discussing</p>
+      <p>Books</p>
+      <p>The authors</p>
+      <p>Readers</p>
+    </div>
 
     <div class="main">
       <div class="text">
@@ -124,32 +133,32 @@
 
     <div class="footer">
       <figure>
-        <img style="width: 150px; height: 200px;" src="./icons/Anne_Hathaway.jpg" alt=".">
+        <img style="width: 100px; height: 150px;" src="./icons/Anne_Hathaway.jpg" alt=".">
         <fieldset>Anne Hathaway</fieldset>
       </figure>
 
       <figure>
-        <img style="width: 150px; height: 200px" src="./icons/Dickens_Gurney.jpg" alt=".">
+        <img style="width: 100px; height: 150px" src="./icons/Dickens_Gurney.jpg" alt=".">
         <fieldset>Dickens Gurney</fieldset>
       </figure>
 
       <figure>
-        <img style="width: 150px; height: 200px" src="./icons/Oscar_Wilde_Sarony.jpg" alt=".">
+        <img style="width: 100px; height: 150px" src="./icons/Oscar_Wilde_Sarony.jpg" alt=".">
         <fieldset>Oscar Wilde</fieldset>
       </figure>
 
       <figure>
-        <img style="width: 150px; height: 200px" src="./icons/Cervantes_Jauregui.jpg" alt=".">
+        <img style="width: 100px; height: 150px" src="./icons/Cervantes_Jauregui.jpg" alt=".">
         <fieldset>Cervantes Jauregui</fieldset>
       </figure>
 
       <figure>
-        <img style="width: 150px; height: 200px" src="./icons/Edgar_Allan_Poe.jpg" alt=".">
+        <img style="width: 100px; height: 150px" src="./icons/Edgar_Allan_Poe.jpg" alt=".">
         <fieldset>Edgar Allan Poe</fieldset>
       </figure>
 
       <figure>
-        <img style="width: 150px; height: 200px" src="./icons/WilliamWordsworth.jpg" alt=".">
+        <img style="width: 100px; height: 150px" src="./icons/WilliamWordsworth.jpg" alt=".">
         <fieldset>William Wordsworth</fieldset>
       </figure>
     </div>
