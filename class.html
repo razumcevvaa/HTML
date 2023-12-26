@@ -59,7 +59,7 @@
             background-color: #f3f3f3;
             height: 50px;
             text-align: center;
-            padding:  0 10px;
+            padding: 0 10px;
         }
 
         button {
@@ -146,67 +146,66 @@
         .menu {
             width: 50%;
         }
-        .hw2 {
-            width: 100%;
-            border: none;
-            border-radius: 0;
-        }
-        .table2 {
-            color: black;
-            height: 50px;
-            background-color: green;
-        }
-        .white {
-            background-color: white;
-        }
-        .green {
-            background-color: green;
-        }
-        .dark {
-            background-color: rgb(63, 110, 63);
-        }
-        .two {
-            opacity: 0;
-        }
-        .two:hover {
-            opacity: 1;
-        }
+
         .text {
-         padding: 50px;   
+            width: 100%;
+            text-align: justify;
+            padding: 50px;
         }
+
+        .table,
+        ul {
+            width: 50%;
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            position: relative;
+            background-color: green;
+        }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
     </style>
     <div class="menu">
-        <table class="hw2">
-       <thead>
-        <th class="table2">Home</th>
-        <th class="table2 dark">Categories</th>
-        <th class="table2">About</th>
-        <th class="table2">Contacts</th>
-       </thead>
-       <tbody class="two">
-        <tr>
-            <td class="white"></td>
-            <td class="green">Man</td>
-        </tr>
-        <tr>
-            <td class="white"></td>
-            <td class="green dark">Woomen</td>
-            <td class="green">Dress</td>
-        </tr>
-        <tr>
-            <td class="white"></td>
-            <td class="green">Kids</td>
-            <td class="green">Pants</td>
-        </tr>
-        <tr>
-            <td class="white"></td>
-            <td class="white"></td>
-            <td class="green dark">Shoes</td>
-        </tr>
-       </tbody>
-        </table>
+        <div class="table">
+            <ul>
+                <li class="green"> <a href="#">Home</a></li>
+                <li class="green two"> <a href="#">Categories</a>
+                    <ul>
+                        <li>Man</li>
+                        <li>Wooman
+                            <ul>
+                                <li>Dress</li>
+                                <li>Pants</li>
+                                <li>Shoes</li>
+                            </ul>
+                        </li>
+                        <li>Kids</li>
+                    </ul>
+                </li>
+                <li class="green"> <a href="#">About</a></li>
+                <li class="green"><a href="#">Contacts</a></li>
+            </ul>
+        </div>
         <div class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dicta aperiam, qui quasi voluptates totam fuga ipsa culpa aliquam, aut consectetur magnam eveniet quis explicabo, aspernatur distinctio rerum? In porro aliquid commodi corrupti quam repellat, possimus, ad itaque quas harum ipsam, beatae ullam fuga aut ducimus ipsum eum. Quisquam temporibus animi voluptatum nemo libero. Natus tenetur unde mollitia quaerat sed, doloremque doloribus nesciunt corrupti distinctio? Quaerat ratione tempore ipsa hic cupiditate error repudiandae consectetur temporibus itaque corporis, laudantium, veniam possimus? Error praesentium quaerat expedita iusto ea! Autem ipsa dolores reprehenderit. Consequuntur dolor ad sunt, amet cum, cupiditate officia repudiandae inventore eum culpa veniam saepe ex enim rerum voluptas itaque ut, sapiente minus harum ipsam libero sint temporibus! Sit et laboriosam placeat a itaque commodi consectetur ipsam, alias ea dolor similique tenetur beatae veritatis vero perspiciatis. Itaque iure reprehenderit repudiandae est, accusantium nihil praesentium asperiores laboriosam voluptates pariatur impedit dolor expedita ut odio dolorem exercitationem nesciunt alias nulla. Vitae quae ex odit! Laborum reprehenderit id, reiciendis ipsum velit aliquid voluptatibus a eaque suscipit molestiae soluta labore voluptate neque dolor cumque debitis at ea libero impedit. Nihil, ducimus perspiciatis quidem inventore commodi mollitia fugiat eos natus. Quam similique amet itaque eum laborum.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dicta aperiam, qui quasi voluptates totam
+            fuga ipsa culpa aliquam, aut consectetur magnam eveniet quis explicabo, aspernatur distinctio rerum? In
+            porro aliquid commodi corrupti quam repellat, possimus, ad itaque quas harum ipsam, beatae ullam fuga aut
+            ducimus ipsum eum. Quisquam temporibus animi voluptatum nemo libero. Natus tenetur unde mollitia quaerat
+            sed, doloremque doloribus nesciunt corrupti distinctio? Quaerat ratione tempore ipsa hic cupiditate error
+            repudiandae consectetur temporibus itaque corporis, laudantium, veniam possimus? Error praesentium quaerat
+            expedita iusto ea! Autem ipsa dolores reprehenderit. Consequuntur dolor ad sunt, amet cum, cupiditate
+            officia repudiandae inventore eum culpa veniam saepe ex enim rerum voluptas itaque ut, sapiente minus harum
+            ipsam libero sint temporibus! Sit et laboriosam placeat a itaque commodi consectetur ipsam, alias ea dolor
+            similique tenetur beatae veritatis vero perspiciatis. Itaque iure reprehenderit repudiandae est, accusantium
+            nihil praesentium asperiores laboriosam voluptates pariatur impedit dolor expedita ut odio dolorem
+            exercitationem nesciunt alias nulla. Vitae quae ex odit! Laborum reprehenderit id, reiciendis ipsum velit
+            aliquid voluptatibus a eaque suscipit molestiae soluta labore voluptate neque dolor cumque debitis at ea
+            libero impedit. Nihil, ducimus perspiciatis quidem inventore commodi mollitia fugiat eos natus. Quam
+            similique amet itaque eum laborum.
         </div>
     </div>
 </body>
