@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <style>
+        .container {
+            width: 800px;
+            margin: 20px;
+        }
+
+        .menu a {
+            display: block;
+            border-radius: 0;
+            background: green;
+            color: white;
+            margin: 0;
+            text-transform: capitalize;
+            transition: 1s;
+            padding: 10px 10.5px;
+            text-decoration: none;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            width: auto;
+            position: relative;
+            background: green;
+
+        }
+
+        .menu li {
+            position: relative;
+            padding: 1px;
+            background: rgb(5, 64, 5);
+            width: 100px;
+            text-align: center;
+        }
+
+        .menu a:hover {
+            background: rgb(5, 64, 5);
+            transition: 1s;
+        }
+
+        .menu li ul {
+            display: none;
+            position: absolute;
+        }
+
+        .menu li:hover>ul {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .menu .inner {
+            left: 100%;
+            top: 0;
+        }
+
+        .text {
+            text-align: justify;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li>
+                    <a href="#">category</a>
+                    <ul style="width: 83.4px; top: 100%;">
+                        <li><a style="border-top: none;" href="#">man</a></li>
+                        <li>
+                            <a href="#">wooman</a>
+                            <ul class="inner">
+                                <li><a href="#">dress</a></li>
+                                <li><a href="#">pants</a></li>
+                                <li><a href="#">shoes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">kids</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+        <div class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dicta aperiam, qui quasi voluptates totam
+            fuga ipsa culpa aliquam, aut consectetur magnam eveniet quis explicabo, aspernatur distinctio rerum? In
+            porro aliquid commodi corrupti quam repellat, possimus, ad itaque quas harum ipsam, beatae ullam fuga aut
+            ducimus ipsum eum. Quisquam temporibus animi voluptatum nemo libero. Natus tenetur unde mollitia quaerat
+            sed, doloremque doloribus nesciunt corrupti distinctio? Quaerat ratione tempore ipsa hic cupiditate error
+            repudiandae consectetur temporibus itaque corporis, laudantium, veniam possimus? Error praesentium quaerat
+            expedita iusto ea! Autem ipsa dolores reprehenderit. Consequuntur dolor ad sunt, amet cum, cupiditate
+            officia repudiandae inventore eum culpa veniam saepe ex enim rerum voluptas itaque ut, sapiente minus harum
+            ipsam libero sint temporibus! Sit et laboriosam placeat a itaque commodi consectetur ipsam, alias ea dolor
+            similique tenetur beatae veritatis vero perspiciatis. Itaque iure reprehenderit repudiandae est, accusantium
+            nihil praesentium asperiores laboriosam voluptates pariatur impedit dolor expedita ut odio dolorem
+            exercitationem nesciunt alias nulla. Vitae quae ex odit! Laborum reprehenderit id, reiciendis ipsum velit
+            aliquid voluptatibus a eaque suscipit molestiae soluta labore voluptate neque dolor cumque debitis at ea
+            libero impedit. Nihil, ducimus perspiciatis quidem inventore commodi mollitia fugiat eos natus. Quam
+            similique amet itaque eum laborum.
+        </div>
+    </div>
+</body>
+
+</html>

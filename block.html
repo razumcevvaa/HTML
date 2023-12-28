@@ -7,14 +7,57 @@
     <title>block</title>
     <style>
         .container {
-         
+            max-width: 800px;
+            position: relative;
+            margin: 200px auto;
         }
-        .top {
-            border-top: 10px solid black;
 
+        img {
+            width: 400px;
+            position: absolute;
+            top: 5px;
+            left: 10px;
+            border: 15px solid rgb(79 0 0);
         }
+
+        .top {
+            width: 400px;
+            height: 400px;
+            border: 20px solid black;
+            position: absolute;
+            rotate: 45deg;
+            border-color: rgb(255, 255, 126) transparent transparent transparent;
+            z-index: -1;
+        }
+
+
         .right {
-            border-left: 10px solid rgb(0, 0, 0);
+            width: 400px;
+            height: 400px;
+            border: 20px solid black;
+            position: absolute;
+            rotate: 45deg;
+            border-color: transparent rgb(255, 255, 126) transparent transparent;
+        }
+
+        .bottom {
+            width: 400px;
+            height: 400px;
+            border: 20px solid black;
+            position: absolute;
+            rotate: 45deg;
+            border-color: transparent transparent rgb(255, 255, 126) transparent;
+            z-index: -1;
+        }
+
+        .left {
+            width: 400px;
+            height: 400px;
+            border: 20px solid #61221e;
+            position: absolute;
+            rotate: 45deg;
+            border-color: transparent transparent transparent rgb(255, 255, 126);
+
         }
     </style>
 </head>
@@ -22,12 +65,12 @@
 <body>
 
     <div class="container">
+        <img src="./icons/20165.jpg" alt=".">
+
         <div class="top"></div>
-        <!-- <img style="width: 300px;" src="./icons/20165.jpg" alt="."> -->
         <div class="right"></div>
         <div class="bottom"></div>
         <div class="left"></div>
-        
 
     </div>
 
