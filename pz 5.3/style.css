@@ -202,7 +202,7 @@ a {
 
 @media (max-width:390px) {
   .main {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .text {
     width: 90%;

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>адаптив</title>
+    <style>
+        .border {
+            border: 1px solid black;
+        }
+
+        .box {
+            background-color: gray;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .small {
+            width: 50px;
+            height: 50px;
+        }
+
+        .big {
+            height: 300px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            text-transform: capitalize;
+        }
+
+        nav ul {
+            list-style: none;
+            gap: 10px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            justify-content: space-between;
+            margin: 10px 0;
+            padding: 10px;
+        }
+
+        .logo {
+            padding: 10px 60px 10px 10px;
+        }
+
+        .content {
+            gap: 10px;
+        }
+
+        aside:last-of-type {
+            margin-top: 10px;
+        }
+
+        aside {
+            padding: 10px;
+            width: 230px;
+        }
+
+        aside ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            padding: 20px;
+            font-size: clamp (12px, 3vw, 16px);
+        }
+
+        header,
+        .content,
+        footer {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .wrap {
+            flex-wrap: wrap;
+            gap: 10px;
+
+        }
+
+        .hideOnDesKtop {
+            display: none;
+        }
+
+        @media screen and (max-width:1024px) {
+            nav input {
+                display: none;
+            }
+
+            .hideOnDesKtop {
+                display: inline;
+            }
+
+            header .flex {
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            aside {
+                width: 110px;
+            }
+
+            main {
+                padding: 0 10px;
+
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            .logo {
+                padding: 0px 60px 0px 10px;
+                font-size: 20px;
+            }
+
+            header .flex {
+                align-items: center;
+            }
+
+            nav {
+                margin: 10px 0;
+            }
+
+            aside:first-of-type {
+                display: none;
+            }
+
+            aside:last-of-type {
+                margin-top: 5px;
+            }
+
+            .content {
+                flex-direction: column;
+            }
+
+            aside {
+                padding: 5px;
+                width: auto;
+            }
+
+            .wrap {
+                flex-wrap: nowrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="flex">
+            <div class="border">
+                <span class="logo">Logo</span>
+            </div>
+            <input class="hideOnDesKtop" type="text">
+        </div>
+        <nav class="border flex">
+            <ul class="flex">
+                <li> <a href="#">home</a></li>
+                <li> <a href="#">about</a></li>
+                <li> <a href="#">gallery</a></li>
+                <li> <a href="#">contact</a></li>
+            </ul>
+            <input type="text">
+        </nav>
+    </header>
+    <div class="content flex">
+        <main class="border">
+            <h1>Lorem, ipsum dolor.</h1>
+            <div class="box big"></div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus inventore veritatis reiciendis
+                    tenetur! Minima dolore a magnam enim placeat. Nemo adipisci distinctio veritatis, rem doloremque
+                    tempore
+                    quaerat explicabo quod, consectetur, soluta dolores hic! Officiis distinctio rerum cumque, natus,
+                    harum
+                    ducimus iste dolore voluptatibus dicta in repellat similique, laborum saepe amet!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla possimus ipsa ea laboriosam quod
+                    facilis
+                    recusandae? Beatae nesciunt dolores perferendis quo quae asperiores reprehenderit a numquam, quas
+                    neque,
+                    cupiditate repudiandae architecto commodi?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Est
+                    repudiandae dolores saepe, quasi, suscipit impedit delectus aspernatur distinctio ipsa optio
+                    assumenda
+                    id, tempora animi? Distinctio cum ea expedita blanditiis officia.</p>
+            </div>
+        </main>
+        <div>
+            <aside class="border ">
+                <p>List</p>
+                <ul>
+                    <li> item 1</li>
+                    <li> item 2</li>
+                    <li> item 3</li>
+                    <li> item 4</li>
+                    <li> item 5</li>
+                </ul>
+            </aside>
+            <aside class="border">
+                <p>lorem</p>
+                <div class="flex wrap">
+                    <div class="box small"></div>
+                    <div class="box  small"></div>
+                    <div class="box  small"></div>
+                    <div class="box  small"></div>
+                    <div class="box  small"></div>
+                    <div class="box  small"></div>
+                    <div class="box  small"></div>
+                    <div class="box  small"></div>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <footer>
+        <p style="font-style: italic;">Copyright 2024</p>
+    </footer>
+</body>
+
+</html>
