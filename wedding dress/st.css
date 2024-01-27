@@ -1,0 +1,163 @@
+@font-face {
+  font-family: 'FoglihtenNo06';
+  src: local('FoglihtenNo06'), url('foglihtenno06.woff2') format('woff2'), url('foglihtenno06.woff') format('woff'), url('foglihtenno06.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.container {
+  font-family: 'FoglihtenNo06';
+}
+.main {
+  height: 100dvh;
+  background-image: url(./1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+  margin: 0 20px;
+}
+
+.main a {
+  color: white;
+}
+
+.hv {
+  display: flex;
+
+  gap: 30px;
+}
+
+.button {
+  border: 1px solid white;
+  padding: 20px 40px;
+  color: white;
+  transition: .8s cubic-bezier(.165, .84, .44, 1);
+
+}
+
+.button:hover {
+  background-color: aliceblue;
+  opacity: 0.7;
+}
+
+.button:hover a {
+  color: black;
+}
+
+.wow {
+  display: flex;
+  padding: 30px 30px;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 70dvh;
+}
+
+.text {
+  width: 400px;
+}
+
+.text h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.block2 {
+  position: relative;
+  color: black;
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+}
+.our {
+  display: flex;
+  margin: 100px 20px;
+  justify-content: space-between;
+  gap: 100px;
+}
+.op {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.text2 h2 {
+  font-size: 35px;
+}
+.text2 {
+  width: 600px;
+  margin: 0 20px;
+}
+.wtf img {
+  width: 400px;
+  z-index: 2;
+  position: absolute;
+  top: 28%;
+  left: 55%;
+  margin-top: 100px;
+}
+.wtf h1 {
+  font-size: 383px;
+  text-transform: uppercase;
+  padding-top:300px;
+}
+.text2 a {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+.block3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.block3 img {
+  width: 300px;
+}
+.flex {
+  display: flex;
+  gap: 150px;
+  margin: 20px 20px;
+}
+.er {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+.ll {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.wi img {
+  width: 300px;
+  height: 400px;
+}
+.more img {
+  width: 400px;
+}
+.flex a {
+  color: black;
+  font-weight: bolder;
+}
+footer {
+  height: 650px;
+  background-image: url(./last.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
