@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my boards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .chats {
+            display: flex;
+        }
+
+        .bigbox {
+            padding: 0 50px;
+        }
+
+        nav {
+            background-color: #008b8b;
+            padding: 20px 20px;
+            color: white;
+            text-transform: uppercase;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+        }
+
+        .container {
+            background-color: #019e9e;
+            height: calc(100vh - 60px);
+            width: 100%;
+            overflow-x: auto;
+            margin-top: 60px;
+            overflow: auto;
+            margin-top: 60px;
+        }
+
+        .name {
+            width: 100%;
+            flex-wrap: wrap;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .name img:last-child {
+            width: 50px;
+            height: 50px;
+        }
+
+        .item {
+            margin: 20px;
+            background-color: #dcdcdc;
+            border-radius: 10px;
+            max-height: 650px;
+            padding: 20px 0;
+            overflow: auto;
+            flex: 1 0 410px
+        }
+
+        .dela {
+            min-width: 300px;
+            max-width: 400px;
+            background-color: #f5f5f5;
+            margin: 20px;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .item h2 {
+            padding-left: 20px;
+        }
+
+        .ll {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>My boards</h1>
+    </nav>
+    <div class="container">
+        <div class="chats">
+            <div class="item">
+                <h2>To do</h2>
+                <div class="dela">
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugiat itaque
+                            dolores
+                            commodi, Dolor, repellat</p>
+                    </div>
+                    <div class="name">
+                        <div class="ll">
+
+                            <img src="./icons/justify_26.png" alt="">
+                            <img src="./icons/checkbox_26.png" alt="">
+                            <p>4/8</p>
+                            <img src="./icons/attach_26.png" alt="">
+                            <p>8</p>
+                            <img src="./icons/comments_26.png" alt="">
+                            <p>4</p>
+                        </div>
+
+                        <img src="./icons/avatar_1.png" alt="">
+                    </div>
+                </div>
+                <div class="dela">
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <div class="name">
+                        <div class="ll">
+
+                            <img src="./icons/justify_26.png" alt="">
+                            <img src="./icons/checkbox_26.png" alt="">
+                            <p>0/3</p>
+                            <img src="./icons/attach_26.png" alt="">
+                            <p>7</p>
+                        </div>
+
+                        <img src="./icons/avatar_1.png" alt="">
+                    </div>
+                </div>
+                <div class="dela">
+                    <div class="text">
+                        <p> ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugiat itaque dolores
+                            commodi, Dolor, repellat labore?</p>
+                    </div>
+                    <div class="name">
+                        <div class="ll">
+                            <img src="./icons/justify_26.png" alt="">
+                            <img src="./icons/attach_26.png" alt="">
+                            <p>1</p>
+                            <img src="./icons/comments_26.png" alt="">
+                            <p>1</p>
+                        </div>
+                        <img src="./icons/avatar_2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <h2>In progress</h2>
+                <div class="dela">
+                    <div class="text">
+                        <p>ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="name">
+                        <div class="ll">
+                            <img src="./icons/justify_26.png" alt="">
+                            <img src="./icons/checkbox_26.png" alt="">
+                            <p>4/8</p>
+                            <img src="./icons/comments_26.png" alt="">
+                            <p>4</p>
+                        </div>
+                        <img src="./icons/avatar_3.png" alt="">
+                    </div>
+                </div>
+                <div class="dela">
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="name">
+                        <div class="ll">
+                            <img src="./icons/justify_26.png" alt="">
+                            <img src="./icons/attach_26.png" alt="">
+                            <p>2</p>
+                            <img src="./icons/comments_26.png" alt="">
+                            <p>14</p>
+                        </div>
+
+                        <img src="./icons/avatar_3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <h2>Test</h2>
+                <div class="dela">
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, in</p>
+                    </div>
+                    <div class="name">
+                        <div class="ll">
+
+                            <img src="./icons/justify_26.png" alt="">
+                            <img src="./icons/checkbox_26.png" alt="">
+                            <p>4/8</p>
+                            <img src="./icons/attach_26.png" alt="">
+                            <p>2</p>
+                            <img src="./icons/comments_26.png" alt="">
+                            <p>4</p>
+                        </div>
+                        <img src="./icons/avatar_1.png" alt="">
+                    </div>
+                </div>
+                <div class="dela">
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <div class="name">
+                        <div class="ll">
+
+                            <img src="./icons/justify_26.png" alt="">
+                            <img src="./icons/checkbox_26.png" alt="">
+                            <p>0/3</p>
+                            <img src="./icons/attach_26.png" alt="">
+                            <p>7</p>
+                        </div>
+                        <img src="./icons/avatar_4.png" alt="">
+                    </div>
+                </div>
+                <div class="dela">
+                    <div class="text">
+                        <p> ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugiat itaque dolores
+                            commodi, ex</p>
+                    </div>
+                    <div class="name">
+                        <div class="ll">
+                            <img src="./icons/justify_26.png" alt="">
+                            <img src="./icons/attach_26.png" alt="">
+                            <p>1</p>
+                            <img src="./icons/comments_26.png" alt="">
+                            <p>1</p>
+                        </div>
+                        <img src="./icons/avatar_3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="item">
+                    <h2>In progress</h2>
+                    <div class="dela">
+                        <div class="text">
+                            <p>ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="name">
+                            <div class="ll">
+                                <img src="./icons/justify_26.png" alt="">
+                                <img src="./icons/checkbox_26.png" alt="">
+                                <p>4/8</p>
+                                <img src="./icons/comments_26.png" alt="">
+                                <p>4</p>
+                            </div>
+                            <img src="./icons/avatar_3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="dela">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="name">
+                            <div class="ll">
+                                <img src="./icons/justify_26.png" alt="">
+                                <img src="./icons/attach_26.png" alt="">
+                                <p>2</p>
+                                <img src="./icons/comments_26.png" alt="">
+                                <p>14</p>
+                            </div>
+
+                            <img src="./icons/avatar_3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="dela">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                        <div class="name">
+                            <div class="ll">
+
+                                <img src="./icons/justify_26.png" alt="">
+                                <img src="./icons/checkbox_26.png" alt="">
+                                <p>0/3</p>
+                                <img src="./icons/attach_26.png" alt="">
+                                <p>7</p>
+                            </div>
+
+                            <img src="./icons/avatar_1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="dela">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                        <div class="name">
+                            <div class="ll">
+
+                                <img src="./icons/justify_26.png" alt="">
+                                <img src="./icons/checkbox_26.png" alt="">
+                                <p>0/3</p>
+                                <img src="./icons/attach_26.png" alt="">
+                                <p>7</p>
+                            </div>
+
+                            <img src="./icons/avatar_1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="dela">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                        <div class="name">
+                            <div class="ll">
+
+                                <img src="./icons/justify_26.png" alt="">
+                                <img src="./icons/checkbox_26.png" alt="">
+                                <p>0/3</p>
+                                <img src="./icons/attach_26.png" alt="">
+                                <p>7</p>
+                            </div>
+
+                            <img src="./icons/avatar_1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
