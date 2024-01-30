@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joker</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+    }
+    .container {
+      height: 100dvh;
+      background-image: url(./icons/joker.PNG);
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      color: white;
+      justify-content: space-between;
+      gap: 20%;
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+      font-size: 20px;
+    }
+    .part {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .main {
+      width: 400px;
+    }
+    .main h1 {
+      font-size: 60px;
+    }
+    .part2 {
+      width: 25%;
+      border-left: 1px solid rgb(212, 212, 212, 0.5 );
+    }
+    .info {
+      border-top: 1px solid rgb(212, 212, 212, 0.5);
+      padding: 20px;
+    }
+    .follow {
+      padding: 20px;
+    }
+    .burger {
+  position: relative;
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 26px;
+}
+.burger::before,
+.burger::after {
+  content: '';
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+.burger::before {
+  top: 0;
+  box-shadow: 0 11px 0 #ffffff;
+}
+.burger::after {
+  bottom: 0;
+}
+.border {
+  width: 50px;
+  border-right:1px solid rgb(212, 212, 212, 0.5) ;
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="border">   <button class="burger"></button> </div>
+    <div class="part">
+      <nav>
+        <a href="#">about</a>
+        <a href="#">videos</a>
+        <a href="#">featured</a>
+        <a href="#">gallery</a>
+      </nav>
+      <div class="main">
+        <h1>joker</h1>
+        <p>The movie centers around the iconic arch nemesis and is an original, standalone story not seen before on the
+          big screen. Phillips' exploration of Arthur Fleck, a man disregarded by society, is not only a gritty
+          character study, but also a broader cautionary tale.</p>
+          <a href="#">learn more</a>
+      </div>
+      <div class="footer">
+        <span>01</span>
+        <span>actors</span>
+        <p>Joaquin Phoenix</p>
+      </div>
+    </div>
+    <div class="part2">
+      <div class="follow">
+        <a href="#"><svg fill="#696969" width="50px" height="50px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#696969"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M18.18 2.515c0.119 0 0.187 0.005 0.187 0.005h2.611l-0.014 3h-2.594c-1.427 0-1.395 1.219-1.395 1.219v4.756h5.051l-0.705 2.996h-4.363v14.993h-2.997l-0.002-14.993h-3.982l-0.008-2.996h3.991v-4.662c0.001-4.065 3.377-4.318 4.217-4.318zM20.979 2.52v0zM18.18 0.515c-0.719 0-2.124 0.119-3.455 0.921-1.26 0.758-2.761 2.311-2.761 5.396v2.662h-1.991c-0.531 0-1.041 0.212-1.417 0.588-0.375 0.377-0.585 0.886-0.583 1.419l0.008 2.996c0.004 1.101 0.899 1.993 2 1.993h1.982l0.002 12.993c0 1.105 0.896 2 2 2h2.997c1.105 0 2-0.895 2-2v-12.993h2.363c0.887 0 1.669-0.585 1.919-1.437l0.705-2.996c0.177-0.604 0.059-1.258-0.319-1.761-0.377-0.505-0.971-0.802-1.601-0.802h-3.051v-1.973l1.988-0.001c1.101 0 1.995-0.889 2-1.991l0.014-2.898c0.002-0.037 0.003-0.073 0.003-0.111 0-1.105-0.893-2-1.998-2h-2.561c-0.058-0.003-0.14-0.005-0.244-0.005z"></path> </g></svg></a>
+        <a href="#"><svg fill="#6b6b6b" width="50px" height="50px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M29.398 5.928c-0.867-0.624-3.283-1.453-13.406-1.453-10.848 0-12.458 0.952-12.975 1.264-2.749 1.652-3.010 8.963-3.034 10.445 0.033 1.958 0.349 8.473 3.032 10.084 0.515 0.311 2.116 1.257 12.976 1.257 10.13 0 12.543-0.825 13.406-1.447 2.343-1.686 2.612-7.49 2.619-9.92-0.006-1.954-0.211-8.496-2.619-10.23zM28.23 24.456c-0.349 0.251-2.35 1.069-12.239 1.069-9.56 0-11.566-0.742-11.945-0.971-0.965-0.579-1.984-3.652-2.063-8.376 0.079-4.713 1.111-8.153 2.066-8.726 0.38-0.229 2.393-0.977 11.943-0.977 9.881 0 11.887 0.824 12.239 1.076 0.857 0.617 1.773 3.865 1.787 8.613-0.014 4.823-0.936 7.678-1.787 8.291zM22.513 15.213l-8.998-5.522c-0.309-0.187-0.695-0.191-1.008-0.014-0.315 0.178-0.509 0.511-0.509 0.871v11.045c0 0.36 0.194 0.694 0.509 0.871 0.152 0.086 0.322 0.129 0.491 0.129 0.178 0 0.358-0.048 0.516-0.143l8.998-5.524c0.3-0.181 0.483-0.506 0.483-0.856s-0.183-0.676-0.483-0.857zM13.999 19.822v-7.503l6.063 3.751z"></path> </g></svg></a>
+        <a href="#"><svg fill="#6b6b6b" width="50px" height="50px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#6b6b6b"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21.387 4.959c1.652 0 3.144 0.676 4.195 1.762 1.308-0.253 2.54-0.714 3.648-1.352-0.428 1.301-1.34 2.393-2.525 3.083 1.16-0.136 2.27-0.434 3.301-0.88-0.773 1.117-1.745 2.1-2.868 2.886 0.011 0.239 0.017 0.479 0.017 0.719 0 7.366-5.782 15.863-16.354 15.863-3.245 0-6.268-0.926-8.809-2.507 0.449 0.052 0.906 0.079 1.37 0.079 2.692 0 5.172-0.89 7.139-2.387-2.517-0.043-4.641-1.657-5.369-3.87 0.351 0.066 0.711 0.101 1.082 0.101 0.522 0 1.032-0.067 1.512-0.195-2.629-0.511-4.611-2.764-4.611-5.467v-0.072c0.776 0.418 1.661 0.669 2.605 0.698-1.543-1.001-2.558-2.705-2.558-4.64 0-1.022 0.284-1.981 0.779-2.801 2.834 3.371 7.069 5.591 11.847 5.824-0.098-0.407-0.149-0.837-0.149-1.27 0-3.079 2.574-5.575 5.749-5.575zM30.006 7.572v0zM21.387 2.959c-3.927 0-7.18 2.869-7.681 6.576-3.213-0.646-6.135-2.346-8.235-4.842-0.381-0.454-0.942-0.713-1.531-0.713-0.052 0-0.104 0.002-0.157 0.006-0.643 0.052-1.223 0.41-1.556 0.962-0.698 1.157-1.066 2.482-1.066 3.833 0 0.902 0.162 1.779 0.469 2.601-0.327 0.364-0.515 0.839-0.515 1.341v0.072c0 1.959 0.774 3.777 2.061 5.139-0.074 0.343-0.058 0.702 0.055 1.046 0.444 1.349 1.251 2.512 2.298 3.398-0.703 0.157-1.428 0.235-2.169 0.235-0.392 0-0.773-0.021-1.133-0.066-0.080-0.010-0.159-0.014-0.238-0.014-0.84 0-1.603 0.529-1.885 1.337-0.31 0.885 0.034 1.866 0.83 2.361 2.954 1.838 6.366 2.808 9.866 2.808 11.376 0 18.219-8.905 18.352-17.605 0.931-0.771 1.754-1.662 2.451-2.661 0.254-0.334 0.405-0.751 0.405-1.203 0-0.681-0.34-1.282-0.859-1.644 0.224-0.769-0.032-1.603-0.657-2.111-0.365-0.297-0.813-0.448-1.262-0.448-0.344 0-0.689 0.088-0.999 0.268-0.661 0.381-1.368 0.683-2.113 0.9-1.347-1.014-3.017-1.578-4.732-1.578z"></path> </g></svg></a>
+      </div>
+      <div class="info">
+        <div class="box">
+          <span>premiere</span>
+          <p>4 october 2019</p>
+        </div>
+        <div class="box">
+          <span>director</span>
+          <p>Todd Phillips</p>
+        </div>
+        <div class="box">
+          <span>music by</span>
+          <p>Hildur Gubnadottir</p>
+        </div>
+        <div class="box">
+          <span>genre</span>
+          <p>Suspense, Thriller</p>
+        </div>
+        <div class="trailer">
+          <a href="#"><svg viewBox="0 0 24 24" width="50px" height="50px" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd" d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21ZM15.224 13.0171C16.011 12.5674 16.011 11.4326 15.224 10.9829L10.7817 8.44446C10.0992 8.05446 9.25 8.54727 9.25 9.33333L9.25 14.6667C9.25 15.4527 10.0992 15.9455 10.7817 15.5555L15.224 13.0171Z" fill="#ffffff"></path> <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#ffffff" stroke-width="2"></path> <path d="M10.9 8.8L10.6577 8.66152C10.1418 8.36676 9.5 8.73922 9.5 9.33333L9.5 14.6667C9.5 15.2608 10.1418 15.6332 10.6577 15.3385L10.9 15.2L15.1 12.8C15.719 12.4463 15.719 11.5537 15.1 11.2L10.9 8.8Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg> watch trailer</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
