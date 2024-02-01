@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вкладки</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      font-size: 20px;
+    }
+
+    .content {
+      display: flex;
+      background-color: #5a5a5a;
+      padding: 30px;
+      color: white;
+      gap: 40px;
+    }
+
+    .a {
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      padding: 30px 0;
+      background-color: #808080;
+      text-align: center;
+      border-bottom: 1px solid rgb(224, 224, 224, 0.5);
+    }
+
+    a:focus {
+      background-color: #5a5a5a;
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      gap: 20px;
+      text-align: justify;
+    }
+
+    img {
+      max-width: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <aside class="a">
+      <a href="#">Tab 1</a>
+      <a href="#">Tab 2</a>
+      <a href="#">Tab 3</a>
+    </aside>
+    <aside class="content">
+      <div class="item">
+        <img src="./icons/350x220.png" alt="//">
+        <h1>Header 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quod vitae odit fugit in libero voluptatum,
+          nulla deleniti quidem laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat unde
+          laborum molestias nam explicabo consequatur, id perferendis nobis, ipsam hic accusantium recusandae amet.
+          Debitis expedita architecto nulla at consequatur.</p>
+      </div>
+      <div class="item">
+        <img src="./icons/350x220.png" alt="//">
+        <h1>Header 2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quod vitae odit fugit in libero voluptatum,
+          nulla deleniti quidem laboriosam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat unde
+          laborum molestias nam explicabo consequatur, id perferendis nobis, ipsam hic accusantium recusandae amet.
+          Debitis expedita architecto nulla at consequatur.</p>
+      </div>
+      <div class="item">
+        <img src="./icons/350x220.png" alt="//">
+        <h1>Header 3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quod vitae odit fugit in libero voluptatum,
+          nulla deleniti quidem laboriosam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat unde
+          laborum molestias nam explicabo consequatur, id perferendis nobis, ipsam hic accusantium recusandae amet.
+          Debitis expedita architecto nulla at consequatur.</p>
+      </div>
+    </aside>
+  </div>
+</body>
+
+</html>
