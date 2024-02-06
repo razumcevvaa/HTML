@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        .container {
+    background-color: #9fcdcd;
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-image: url(./icons/image.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 180px;
+}
+
+.card {
+    padding-top: 20px;
+
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 30px;
+}
+
+h1 {
+    font-size: 18px;
+    color: white;
+
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    background-color: #aedbdb;
+    border: none;
+    border-bottom: 1px solid #385555;
+}
+
+input::placeholder {
+    padding-left: 5px;
+}
+
+
+.back {
+    display: flex;
+    width: 200px;
+    margin-left: 30px;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: baseline;
+}
+
+label {
+    font-size: 15px;
+    color: #385555;
+
+}
+
+.numb {
+    width: 53px;
+}
+
+.cvv-t {
+    width: 50px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.l {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.title {
+    width: 300px;
+    background-color: orangered;
+    padding-left: 40px;
+    margin-bottom: 15px;
+    margin-left: -10px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+
+            <div class="title">
+                <h1>CREDIT CARD DETAILS</h1>
+            </div>
+            <form class="flex">
+                <label for="card">Card number</label>
+                <input name="card" type="number" id="card" required placeholder="1234 5678 9073 3822" minlength="16"
+                    maxlength="16">
+
+                <label for="username">Name on card</label>
+                <input type="text" name="username" id="username" placeholder="Name Surname" required
+                    autocapitalize="text">
+            </form>
+            <div class="back">
+
+                <form class="date">
+                    <label for="number">Expiry date</label>
+                    <div class="l">
+                        <input class="numb" type="number" id="number" maxlength="2" placeholder="02" required>
+
+                        <input class="numb" type="number" id="number" placeholder="2012" required>
+                    </div>
+                </form>
+
+                <div class="cvv">
+                    <label for="cvv">Cvv/Cvn</label>
+                    <input class="cvv-t" type="text" id="cvv" placeholder="***" minlength="3" maxlength="3" required>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

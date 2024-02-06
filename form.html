@@ -1,21 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sushi form</title>
+  <style>
+    body {
+      background-image: url(./icons/sushi.webp);
+      background-repeat: no-repeat;
+      background-size: cover
+    }
+    form {
+      width: 400px;
+      margin-left: 65%;
+      margin-top: 150px;
+      color: white;
+      font-size: 20px;
+      background-color: rgb(49, 49, 49, 0.5);
+      padding: 30px;
+      border-radius: 20px;
+    }
+
+    input {
+      width: 250px;
+      margin: 10px;
+      border-radius: 20px;
+      padding: 10px;
+    }
+
+    select {
+      padding: 5px 10px;
+      border-radius: 20px;
+      margin-left: 10px;
+    }
+
+    .napkins {
+      width: 20px;
+      margin-bottom: 20px;
+      margin-left: 0;
+      margin-right: 10px;
+    
+    }
+    .sticks {
+      width: 100px;
+    }
+    textarea {
+     width: 100%;
+    }
+    h1 {
+      text-align: center;
+    }
+  </style>
 </head>
+
 <body>
   <form action="form_resut.html">
-    <label for="name">имя</label>
-    <input type="text" name="name" id="name" placeholder="имя">
-    <label for="adress">адрес</label>
-    <input type="text" name="adress" id="adress" placeholder="адрес">
+    <h1>Заказ</h1>
+    <label for="name">Имя</label>
+    <input type="text" name="name" id="name" placeholder="имя" autocomplete="name"> <br>
+    <label for="adress">Адрес</label>
+    <input type="text" name="adress" id="adress" placeholder="адрес"> <br>
     <label for="tel"></label>
-    <input type="tel" name="tel" id="tel" placeholder="+7" required maxlength="11">
+    <input type="tel" name="tel" id="tel" placeholder="+7" required maxlength="11"> <br>
     <label for="mail">Email</label>
-    <input type="email" name="email" id="mail" placeholder="email" autocapitalize="email" autocomplete="email">
-    
+    <input type="email" name="email" id="mail" placeholder="email" autocapitalize="email" autocomplete="email"><br>
+    <label for="sticks">Количество палочек</label>
+    <input type="number" name="sticks" class="sticks" id="sticks" min="1" max="10"><br>
+    <label for="theTupeOfsticks">Вид палочек</label>
+    <select name="theTupeOfsticks" id="theTupeOfsticks">
+      <option value="normal">Обычные</option>
+      <option value="training">Учебные</option>
+    </select><br>
+    <input type="checkbox" class="napkins" name="napkins" value="napkins">
+    <label for="napkins">Класть салфетки</label><br>
+    <textarea name="message" rows="6" cols="30">
+      Комментарий к заказу
+     </textarea><br>
+     <div style="display: flex;">
+      <input type="submit" value="Отправить">
+      <input type="reset">
+     </div>
   </form>
+
 </body>
+
 </html>
