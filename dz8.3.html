@@ -8,9 +8,11 @@
   <title>Регистрация</title>
   <style>
     .container {
-      display: flex;
-      padding: 40px;
-      gap: 40px;
+      box-shadow: 0px 0px 21px 6px rgba(34, 60, 80, 0.61);
+      max-width: 1100px;
+      background-color: #f5f5f5;
+      margin: 20px auto;
+      margin-top: 50px;
     }
 
     img {
@@ -19,15 +21,93 @@
 
     .row {
       display: flex;
-      align-items: end;
+      align-items: start;
       margin-top: 10px;
       gap: 20px;
     }
 
     input {
-      padding: 20px;
+      padding: 5px 30px;
       border: none;
       border-bottom: 1px solid black;
+      background-color: #f5f5f5;
+    }
+
+    .forMedia {
+      display: flex;
+      gap: 10px;
+    }
+
+    .flex {
+      display: flex;
+      padding: 20px;
+      gap: 40px;
+      margin: 0 auto;
+      margin: 0 40px;
+    }
+
+    .btn {
+      padding: 10px 40px;
+      margin-left: 80%;
+      margin-top: 50px;
+      background-color: #008b8b;
+      border: none;
+      color: white;
+      font-size: 15px;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+    }
+
+    select {
+      border: none;
+      border-bottom: 1px solid gray;
+      color: gray;
+      padding: 5px 20px;
+      max-width: 200px;
+      background-color: #f5f5f5;
+
+    }
+
+    .d-flex {
+      margin: 0 80px;
+    }
+
+    @media (max-width:900px) {
+      .flex {
+        flex-direction: column;
+      }
+
+      .flex input {
+        width: 100%;
+      }
+
+      .btn {
+        margin-left: 70%;
+      }
+    }
+
+    @media (max-width:600px) {
+      .container {
+        max-width: 600px;
+      }
+
+      .flex {
+        margin: 0;
+      }
+
+      .forMedia {
+        display: flex;
+        flex-direction: column;
+       width: 290px;
+      }
+
+      .forMedia input {
+        width: 100%;
+      }
+      .col2 .row {
+        flex-direction: column;
+box-sizing: content-box;
+      }
     }
   </style>
 </head>
@@ -35,36 +115,56 @@
 <body>
   <section>
     <div class="container">
-      <div class="col">
-        <h1>Registration form</h1>
-        <div class="row">
-          <img src="./icons/username.png" alt="">
-          <input type="text" name="name" id="username" placeholder="Username">
+      <div class="flex">
+        <div class="col">
+          <h1>Registration form</h1>
+          <div class="row">
+            <img src="./icons/username.png" alt="">
+            <input type="text" name="name" id="username" placeholder="Username">
+          </div>
+          <div class="row">
+            <img src="./icons/email.png" alt="">
+            <input type="email" name="email" id="email" placeholder="Email adress">
+          </div>
+          <div class="row">
+            <img src="./icons/pswd.png" alt="">
+            <div class="forMedia">
+              <input type="password" name="password" id="password" placeholder="Password">
+              <input type="password" name="password" id="password" placeholder="Confirm password">
+            </div>
+          </div>
         </div>
-        <div class="row">
-          <img src="./icons/email.png" alt="">
-          <input type="email" name="email" id="email" placeholder="Email adress">
-        </div>
-        <div class="row">
-          <img src="./icons/pswd.png" alt="">
-          <input type="password" name="password" id="password" placeholder="Password">
-          <input type="password" name="password" id="password" placeholder="Confirm password">
+        <div class="col col2">
+          <h1>Pesronal details</h1>
+          <div class="row">
+            <input type="text" name="name" placeholder="First name">
+            <input type="text" name="name" placeholder="Last name">
+          </div>
+          <div class="row">
+            <select class="form-select">
+              <option selected>Male</option>
+              <option value="female">Female</option>
+            </select>
+            <input type="date" name="date" placeholder="mm/dd/yyyy">
+          </div>
         </div>
       </div>
-      <div class="col">
-        <h1>Pesronal details</h1>
-        <div class="row">
-          <input type="text" name="name" placeholder="First name">
-          <input type="text" name="name" placeholder="Last name">
+
+      <div class="d-flex flex-column">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            I want to receive news and special offers
+          </label>
         </div>
-        <div class="row">
-          <select class="form-select">
-            <option selected>Male</option>
-            <option value="female">Female</option>
-          </select>
-          <input type="date" name="date" placeholder="mm/dd/yyyy">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+          <label class="form-check-label" for="flexCheckChecked">
+            I agree with the Terms and Conditions
+          </label>
         </div>
       </div>
+      <button type="submit" class="btn">Submit</button>
     </div>
   </section>
 </body>
